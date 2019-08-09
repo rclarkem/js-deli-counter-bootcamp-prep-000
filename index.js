@@ -21,7 +21,7 @@ return `Currently serving ${shifted}.`
 
 
 function currentLine(currentLineOfPeople){
-  let line = [The line is currently:];
+  let line = [`The line is currently:`];
 	if(currentLineOfPeople.length < 1){
 		return `The line is currently empty.`
 	}
