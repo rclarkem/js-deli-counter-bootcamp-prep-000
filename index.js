@@ -21,13 +21,12 @@ return `Currently serving ${shifted}.`
 
 
 function currentLine(currentLineOfPeople){
-  let line = [`The line is currently:`];
+  let line = [] ;
 	if(currentLineOfPeople.length < 1){
 		return `The line is currently empty.`
 	}
 	for(let i = 0; i < currentLineOfPeople.length; i++){
-		console.log(currentLineOfPeople[i])
-  line.push(`${i + 1}. ${currentLineOfPeople[i]}`)
-  }
-return line.join(", ")
+			line.push(`${i + 1}. ${currentLineOfPeople[i]}`)
+	}
+ return `The line is currently: ` + line.join(", ")
 }
