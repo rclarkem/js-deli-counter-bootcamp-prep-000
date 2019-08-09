@@ -1,7 +1,7 @@
 
 
 function takeANumber(currentLineOfPeople, newPerson){
-katzDeliLine.push(newPerson)
+currentLineOfPeople.push(newPerson)
 // console.log(currentLineOfPeople)
   return `Welcome, ${newPerson}. You are number ${currentLineOfPeople.length} in line.`
 }
