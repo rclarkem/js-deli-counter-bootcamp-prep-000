@@ -22,7 +22,7 @@ return `Currently serving ${shifted}.`
 
 function currentLine(currentLineOfPeople){
   let line;
-	if(line.length < 1){
+	if(currentLineOfPeople.length < 1){
 		return `The line is currently empty.`
 	}
 	for(let i = 0; i < currentLineOfPeople.length; i++){
