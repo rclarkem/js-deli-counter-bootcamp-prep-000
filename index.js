@@ -13,7 +13,7 @@ if(currentLineOfPeople.length < 1){
   return "There is nobody waiting to be served!"
 } else {
 let shifted = currentLineOfPeople.shift()
-return `Currently serving ${shifted}`
+return `Currently serving ${shifted}.`
 }
 
 
