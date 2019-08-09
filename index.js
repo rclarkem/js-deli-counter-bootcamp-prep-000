@@ -1,0 +1,30 @@
+var katzDeliLine = [];
+
+function takeANumber(currentLineOfPeople, newPerson){
+katzDeliLine.push(newPerson)
+// console.log(currentLineOfPeople)
+  return `Welcome, ${newPerson}. You are number ${currentLineOfPeople.length} in line.`
+}
+
+// console.log(katzDeliLine)
+
+function nowServing(currentLineOfPeople){
+if(currentLineOfPeople.length < 1){
+  return "There is nobody waiting to be served!"
+} else {
+let shifted = currentLineOfPeople.shift()
+return `Currently serving ${shifted}`
+}
+
+
+}
+
+
+function currentLine(currentLineOfPeople){
+  let line = [`The line is currently:`];
+	for(let i = 0; i < currentLineOfPeople.length; i++){
+		console.log(currentLineOfPeople[i])
+  line.push(`${i + 1}. ${currentLineOfPeople[i]}`)
+  }
+return line.join(", ")
+}
